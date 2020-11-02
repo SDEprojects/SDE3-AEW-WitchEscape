@@ -1,7 +1,8 @@
 package com.util;
 
 public class Validation {
-    static String regex = "^[a-zA-Z]+$";
+    // instance
+     private static String regex = "^[a-zA-Z]+$";
 
     //Function to validate input from Player
     public static boolean isInputValidString(String input) {

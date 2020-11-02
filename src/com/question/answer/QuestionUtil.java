@@ -56,7 +56,7 @@ public class QuestionUtil {
     }
 
     private static Question createQuestion4() {
-        String question = "When asked how ild she is, Karen replied, In 2 years I will be twice as old as I was 5 years ago. How old is she now?";
+        String question = "When asked how old she is, Karen replied, In 2 years I will be twice as old as I was 5 years ago. How old is she now?";
 
         Question q = new Question(question);
         q.addChoice("11");

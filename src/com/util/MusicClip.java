@@ -8,6 +8,7 @@ import java.io.IOException;
 public class MusicClip {
     static AudioInputStream audioInputStream;
     static  Clip clip;
+
     // Function for music clip
     public static void music(){
 
@@ -26,10 +27,13 @@ public class MusicClip {
             e.printStackTrace();
         }
     }
+
+    //Start the clip
     public static void play(){
         clip.start();
     }
 
+    //stop the clip
     public static void stop(){
         clip.stop();
     }

@@ -97,18 +97,22 @@ public class TheWorldInteraction {
         //System.out.println("inside the trade method!");
         ArrayList<String> inner = new ArrayList<>(Arrays.asList(inputArray));
         //System.out.println(inner);
-        if (currentRoomObj.getName().equals("sandwhichshop") || currentRoomObj.getName().equals("shoeladyshop")) {
+        String message = "";
+        if (currentRoomObj.getName().equals("sandwichshop") || currentRoomObj.getName().equals("shoeladyshop")) {
             if (inventory.contains("hammer")) {
                 if (inner.contains("sandwich")) {
                     inventory.remove("hammer");
                     inventory.add("sandwich");
+                    message =" You have traded sandwich for hammer";
                 } else if (inner.contains("leather")) {
                     inventory.remove("hammer");
                     inventory.add("leather");
+                    message= " You have traded leather for hammer ";
                 }
+                setMessage(message);
             }
-            if (inner.contains("horse") && (inventory.contains("leather") || inventory.contains("frying pan"))) {
-                String message = "";
+            else if (inner.contains("horse") && (inventory.contains("leather") || inventory.contains("frying pan"))) {
+
                 if (inventory.contains("leather")) {
                     inventory.remove("leather");
                     message = "You successfully exchanged leather for the horse and you are now headed to the pier!";

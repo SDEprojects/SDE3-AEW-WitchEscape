@@ -43,7 +43,7 @@
         <exits>sandwich shop, shoe lady shop, church</exits>
         <items></items>
         <sandwichshopdesc>Opening Sandwich Shop's door.</sandwichshopdesc>
-        <shoeladyshopdesc>You are now inside Shoe Lady Shop.</shoeladyshopdesc>
+        <shoeladyshopdesc>Opening Shoe Lady Shop's door...</shoeladyshopdesc>
         <churchdesc>You are opening church entrance door </churchdesc>
         <shoeladyshop>shoeladyshop</shoeladyshop>
         <church>church</church>
